@@ -23,8 +23,8 @@ data "vault_aws_access_credentials" "aws_creds" {
 
 provider "aws" {
   region = "${var.aws_region}"
-  access_key = "${data.vault_aws_access_credentials.aws_creds.access_key}"
-  secret_key = "${data.vault_aws_access_credentials.aws_creds.secret_key}"
+  access_key = "AKIAJIGLX7MGJ7MMILEA"
+  secret_key = "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"
 }
 
 resource "aws_instance" "ubuntu" {
